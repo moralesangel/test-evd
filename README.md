@@ -65,5 +65,9 @@ The final layer has 2 neurons with a softmax activation function. Softmax ensure
 We split the dataset with 70% (6300 images) to train, 10% (900 images) to validate and 20% (1800 images) to test.
 
 ## Results and conclusion
+Here you can see an ambulance audio correctly classified, this kind of sounds are really different from the others:
+
+![Ambulance sound](images/police-car.png)
+
 We achieve a 93.95% of accuracy showing the potencial of CNNs when comes to image classification.
 

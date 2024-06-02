@@ -25,40 +25,39 @@ These images is what we are going to use to train or CNN model.
 ## Methodology
 We start showing the arquitecture created for the CNN model.
 
-Input Layer:
-
+- Input Layer:
 input_shape: This parameter defines the dimensions of the input data. The provided code assumes your input data has an unspecified height (input_shape[0]), width (input_shape[1]), and a single channel (input_shape[2]).
-Convolutional Layer 1:
 
+- Convolutional Layer 1:
 Conv2D(32, kernel_size=(3, 3), strides=1, activation='relu'):
 This layer applies 32 filters of size 3x3 with a stride of 1 to the input. Stride of 1 means the filters slide one pixel at a time across the input.
 The relu (Rectified Linear Unit) activation function introduces non-linearity, helping the network learn complex patterns.
-Pooling Layer 1:
 
+- Pooling Layer 1:
 MaxPooling2D(pool_size=(2, 2), strides=2):
 This layer performs down-sampling by applying a 2x2 max pooling operation with a stride of 2. This reduces the spatial dimensionality of the data, making it computationally more efficient and helping the network focus on relevant features.
-Convolutional Layer 2:
 
+- Convolutional Layer 2:
 Conv2D(64, kernel_size=(3, 3), strides=1, activation='relu'):
 Similar to the first convolutional layer, but with 64 filters, potentially capturing more intricate features.
-Pooling Layer 2:
 
+- Pooling Layer 2:
 MaxPooling2D(pool_size=(2, 2), strides=2):
 Another 2x2 max pooling operation with a stride of 2 for further down-sampling.
-Flattening Layer:
 
+- Flattening Layer:
 Flatten():
 This layer transforms the 2D feature maps from the previous convolutional layers into a 1D vector, suitable for feeding into fully connected layers.
-Fully Connected Layer 1:
 
+- Fully Connected Layer 1:
 Dense(128, activation='relu'):
 This layer is the first fully connected layer with 128 neurons. It connects all neurons from the flattened layer to each neuron in this layer, allowing the network to learn more complex relationships between features. The relu activation provides non-linearity.
-Dropout Layer:
 
+- Dropout Layer:
 Dropout(0.2):
 This layer randomly drops 20% of the neurons during training, helping to prevent overfitting by reducing the reliance on any specific neuron.
-Output Layer:
 
+- Output Layer:
 Dense(2, activation='softmax'):
 The final layer has 2 neurons with a softmax activation function. Softmax ensures the output values sum to 1, representing probabilities for two possible classes.
 

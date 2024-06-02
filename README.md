@@ -15,7 +15,8 @@ Some clips are 3 seconds long, an others 10 seconds long, so we need to adapt th
 Now, as we are going to work with CNN, we are going to convert those audio files into images, by extrating their chroma features.
 Chroma features are the relevance of each musical pitch (A to G or Do to Si depending on the country) in a specific moment of the audio. Let's see an example:
 
-
+![Idle Engine](images/engine.png)
+![Girl singing](images/singing.png)
 
 
 

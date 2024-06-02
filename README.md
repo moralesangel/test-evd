@@ -13,11 +13,12 @@ Then, we will use those relevant classes in the dataset, like those mentioned be
 Some clips are 3 seconds long, an others 10 seconds long, so we need to adapt them to have the same duration. Since most of them are 10 seconds long, we will adapt them all to this duration. We will also normalize this audio values.
 
 Now, as we are going to work with CNN, we are going to convert those audio files into images, by extrating their chroma features.
-Chroma features are the relevance of each musical pitch (A to G or Do to Si depending on the country) in a specific moment of the audio. Let's see an example:
+Chroma features are the relevance of each musical pitch (A to G or Do to Si depending on the country) in a specific moment of the audio. Let's see two examples:
 
 ![Idle Engine](images/engine.png)
 ![Girl singing](images/singing.png)
 
+The first one is an idle engine, so same frequency over time. The second one is a girl singing, so different pitches.
 
 
 ## 

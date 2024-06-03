@@ -5,7 +5,7 @@ This Deep Learning project is develop to detect emergency vehicles (ambulance, p
 To test this model, dowload backend folder and in that directory run: pip install -r requirements. txt
 Then run: python api.py
 
-It will take a few seconds, but you will start seeing in the terminal the detection, of the model in real time.
+It will take a few seconds, but you will start seeing in the terminal the detection of the model in real time.
 You can also use this simple website I created to see what the model is detecting: https://evd-frontend.netlify.app
 
 You can now try to reproduce sounds next to your computer like ambulance sirens, but also other sounds, and see what the model detects.

@@ -1,6 +1,18 @@
 # emergency-vehicles-detection
 This Deep Learning project is develop to detect emergency vehicles (ambulance, police cars, ...) using street audio. CNN and chroma features will help us achieve this goal.
 
+# Demostration
+To test this model, dowload backend folder and in that directory run: pip install -r requirements. txt
+Then run: python api.py
+
+It will take a few seconds, but you will start seeing in the terminal the detection, of the model in real time.
+You can also use this simple website I created to see what the model is detecting: https://evd-frontend.netlify.app
+
+You can now try to reproduce sounds next to your computer like ambulance sirens, but also other sounds, and see what the model detects.
+Have fun!
+
+# Project Description
+
 ## Getting data
 We will use this dataset for our purposes: https://research.google.com/audioset/dataset/index.html
 This dataset give us Youtube urls to vides about different noises, like helicopters, wind, car engines, traffic noise, ... and of course emergency vehicle noises.

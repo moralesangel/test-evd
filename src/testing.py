@@ -11,22 +11,10 @@ from sklearn.model_selection import GridSearchCV
 from scikeras.wrappers import KerasClassifier
  
 # IMPORTING FEATURE EXTRACTION METHODS
-from feature_extraction.mfcc import mfcc
 from feature_extraction.chroma import chroma
-from feature_extraction.zcr import zcr
-from feature_extraction.plp import plp
-# TODO from feature_extraction.lfcc import lfcc
-# TODO from feature_extraction.gfcc import gfcc
-# TODO from feature_extraction.hnr import hnr
-# TODO from feature_extraction.wt import wt
-# TODO from feature_extraction.sf import sf
 
 # IMPORTING MODELS
-from models.ann import ann
 from models.cnn import cnn
-# TODO from models.lstm import lstm
-# TODO from models.gru import gru
-# TODO from models.capsnet import capsnet
 
 # SETTING UP THE CONFIGURATIONS
 # ----------------------------------------------

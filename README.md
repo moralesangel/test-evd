@@ -2,7 +2,7 @@
 This Deep Learning project is develop to detect emergency vehicles (ambulance, police cars, ...) using street audio. CNN and chroma features will help us achieve this goal.
 
 # Demostration
-To test this model, dowload backend folder and in that directory run: pip install -r requirements. txt
+To test this model, dowload backend folder and in that directory run: pip install -r requirements.txt
 
 Then run: python api.py
 
